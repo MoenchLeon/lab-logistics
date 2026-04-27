@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "PowerShell(gh api repos/MoenchLeon/lab-logistics --jq '{visibility, default_branch, has_pages, html_url}')",
+      "PowerShell(gh api repos/MoenchLeon/lab-logistics/pages)",
+      "Bash(curl -s -o /dev/null -w \"Repo page: %{http_code}\\\\n\" https://github.com/MoenchLeon/lab-logistics)",
+      "Bash(curl -s -o /dev/null -w \"GH Pages site: %{http_code}\\\\n\" https://moenchleon.github.io/lab-logistics/)",
+      "Bash(curl -s https://moenchleon.github.io/lab-logistics/)",
+      "Bash(curl -s -o /dev/null -w \"style.css: %{http_code}\\\\n\" https://moenchleon.github.io/lab-logistics/style.css)",
+      "Bash(curl -s -o /dev/null -w \"main.js: %{http_code}\\\\n\" https://moenchleon.github.io/lab-logistics/main.js)",
+      "Bash(curl -s -o /dev/null -w \"produkte.html: %{http_code}\\\\n\" https://moenchleon.github.io/lab-logistics/produkte.html)",
+      "Bash(curl -s https://moenchleon.github.io/lab-logistics/produkte.html)",
+      "Bash(curl --version)",
+      "Bash(jq --version)",
+      "Bash(curl -s -H \"Authorization: 3Fztd9BOMEmMjwXB4ZzKxUNqjgEw08mhBreDrof4C7Y0SOIKY47aSAKP\" \"https://api.pexels.com/v1/search?query=bathroom&per_page=1\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\(0,'utf8'\\)\\); if\\(d.error\\){console.log\\('FEHLER:',d.error\\)}else{console.log\\('OK — total_results:',d.total_results,'| Limits:',d.page\\);process.exit\\(0\\)}\")",
+      "Bash(PEXELS_KEY=3Fztd9BOMEmMjwXB4ZzKxUNqjgEw08mhBreDrof4C7Y0SOIKY47aSAKP node scripts/download-images.js)"
+    ]
+  }
+}
