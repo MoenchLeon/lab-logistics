@@ -15,7 +15,11 @@
       "Bash(jq --version)",
       "Bash(curl -s -H \"Authorization: 3Fztd9BOMEmMjwXB4ZzKxUNqjgEw08mhBreDrof4C7Y0SOIKY47aSAKP\" \"https://api.pexels.com/v1/search?query=bathroom&per_page=1\")",
       "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\(0,'utf8'\\)\\); if\\(d.error\\){console.log\\('FEHLER:',d.error\\)}else{console.log\\('OK — total_results:',d.total_results,'| Limits:',d.page\\);process.exit\\(0\\)}\")",
-      "Bash(PEXELS_KEY=3Fztd9BOMEmMjwXB4ZzKxUNqjgEw08mhBreDrof4C7Y0SOIKY47aSAKP node scripts/download-images.js)"
+      "Bash(PEXELS_KEY=3Fztd9BOMEmMjwXB4ZzKxUNqjgEw08mhBreDrof4C7Y0SOIKY47aSAKP node scripts/download-images.js)",
+      "Bash(git mv *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
